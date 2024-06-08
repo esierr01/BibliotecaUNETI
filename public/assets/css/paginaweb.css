@@ -1,0 +1,95 @@
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('/assets/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-custom2 {
+    margin: 10px auto 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    border-radius: 15px;
+    z-index: 99;
+}
+.contenedor-titulo {
+    margin-top: 50px;
+}
+.titulo-ppal-web {
+    text-align: center;
+    color: white;
+    font-size: 4.2em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.caja-titulo {
+    margin: auto;
+    align-items: center;
+    width: 180px;
+    height: 25px;
+    border-bottom: 5px solid white;
+}
+.contenedor-libros {
+    margin-top: 140px;
+}
+.contenedor-acerca {
+    margin-top: 140px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 1.3em;
+    color: rgba(29, 28, 28, 0.808);
+}
+.contacto {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.5px);
+    border-radius: 5px;
+
+    padding: 15px;
+    margin-top: 70px;
+    text-align: center;
+    color: rgba(22, 21, 21, 0.808);
+}
+footer {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgba(29, 28, 28, 0.808);
+}
+.imagen-pagina {
+    width: 259px;
+    height: 346px;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+}
+.contenedor-libros .row {
+    width: 100%;
+    margin: auto;
+}
+.contenedor-libros h4 {
+    color: #2c2b49;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+.contenedor-libros p {
+    color: #666666;
+    font-size: 0.9em;
+}
+.custom-libros {
+    background: #A1FFCE;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
