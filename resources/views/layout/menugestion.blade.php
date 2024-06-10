@@ -25,31 +25,48 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Libros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Prestamos</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Administrar
-                        </a>
+                            Libros
+                        </a>                        
                         <ul class="dropdown-menu color-drop text-black">
-                            <li><a class="dropdown-item" href="">Usuarios del Sistema</a></li>
+                            <li><a class="dropdown-item" href="">Activos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="">Libros Eliminados</a></li>
-                            <li><a class="dropdown-item" href="#">Clientes Eliminados</a></li>
-                            <li><a class="dropdown-item" href="#">Prestamos devueltos</a></li>
+                            <li><a class="dropdown-item text-danger" href="">Eliminados</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Clientes
+                        </a>                        
+                        <ul class="dropdown-menu color-drop text-black">
+                            <li><a class="dropdown-item" href="">Activos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="">Eliminados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Prestamos
+                        </a>                        
+                        <ul class="dropdown-menu color-drop text-black">
+                            <li><a class="dropdown-item" href="">Activos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="">Eliminados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="">Usuarios</a>
+                    </li>                 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('signout') }}"
                             onclick="event.preventDefault();

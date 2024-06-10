@@ -93,3 +93,12 @@ footer {
     background: linear-gradient(to right, #FAFFD1, #A1FFCE);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.contacto-mapa{
+    margin-top: 140px;
+}
+.contacto-mapa .col-5, .col-7{
+    height: 400;
+}
+.mapa{
+    border: 5px solid gray;
+}
