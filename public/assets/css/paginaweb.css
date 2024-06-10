@@ -8,13 +8,19 @@ body {
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('/assets/img/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw 60vh;
+    background-size: 100% 20em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.navbar-brand {
+.logo {
     color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 .navbar-custom2 {
-    margin: 10px auto 0;
+    margin: 1em auto 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0px);
@@ -22,27 +28,30 @@ body {
     z-index: 99;
 }
 .contenedor-titulo {
-    margin-top: 50px;
+    margin-top: 1.5em;
 }
 .titulo-ppal-web {
     text-align: center;
     color: white;
     font-size: 4.2em;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: .5em;
 }
 .caja-titulo {
     margin: auto;
     align-items: center;
-    width: 180px;
-    height: 25px;
+    width: 10em;
+    height: 1.5em;
     border-bottom: 5px solid white;
 }
 .contenedor-libros {
-    margin-top: 140px;
+    margin-top: 5rem;
+    margin-bottom: 2em;
 }
 .contenedor-acerca {
-    margin-top: 140px;
+    margin-top: 5rem;
+    margin-bottom: 2em;
+
     letter-spacing: 2px;
     line-height: 1.5;
     font-size: 1.3em;
@@ -54,12 +63,15 @@ body {
     border-radius: 5px;
 
     padding: 15px;
-    margin-top: 70px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+
     text-align: center;
     color: rgba(22, 21, 21, 0.808);
 }
 footer {
-    margin-top: 70px;
+    /* margin-top: 4em; */
+    margin-top: auto;
     margin-bottom: 50px;
     text-align: center;
     color: rgba(29, 28, 28, 0.808);
@@ -94,7 +106,8 @@ footer {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contacto-mapa{
-    margin-top: 140px;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
 }
 .contacto-mapa .col-5, .col-7{
     height: 400;

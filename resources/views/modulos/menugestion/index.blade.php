@@ -1,21 +1,21 @@
-@extends('layout.menugestion')
+@extends('layout.menugestion') 
 
 @section('title', 'BibliotecaUNETI - Gestión')
 
 @section('content')
     <div class="row">
-        <div class="col-md-10 offset-1 text-center mt-4">
+        <div class="col-md-10 offset-1 text-center mt-5">
             <div class="jumbotron jumbotron-fluid bg-body-secondary p-2 rounded custom-fondo">
                 <div class="container">
                     <h1 class="display-6 mb-4 text-center">Bienvenido al Sistema BibliotecaUneti</h1>
                     <p class="lead fs-5 text-center">
-                        Aplicación desarrollada por: <strong class="programador">Emmanuel Sierra / CI 11048546</strong> como
+                        Aplicación desarrollada por: <span class="fw-semibold"><strong>Emmanuel Sierra / CI 11048546</strong></span> como
                         entrega final de
                         <br>
                         la materia <span class="text-dark fw-semibold"><strong>Programación II (M2)</strong></span> del PNF
                         Ingeniería en Informática de la UNETI
                     <div class="text-center">
-                        <img class="img-fluid" width="150px" src="/assets/img/uneti.png" alt="uneti">
+                        <img class="img-fluid" width="160px" src="/assets/img/uneti.png" alt="uneti">
                     </div>
                     La Aplicación fue desarrollada utilizando: <br>
                     <div class="text-center mt-4" id="lenguajes">

@@ -9,11 +9,14 @@ body {
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('/assets/img/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw 30vh;
+    background-size: 100% 15em;
 }
 
-.navbar-brand {
+.logo {
     color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 .navbar-custom2 {
@@ -43,6 +46,10 @@ body {
     width: 180px;
     height: 25px;
     border-bottom: 5px solid white;
+}
+
+.contenedor-login{
+    margin-top: 5em;
 }
 
 footer {

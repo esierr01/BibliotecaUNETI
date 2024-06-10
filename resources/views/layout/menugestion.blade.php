@@ -14,7 +14,11 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom1">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold ">BibliotecaUneti</a>
+            <span class="logo">
+                <img class="img-fluid" width="90em" src="/assets/img/uneti.png" alt="uneti">
+                BibliotecaUneti
+            </span>
+
             <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -31,7 +35,7 @@
                             Libros
                         </a>                        
                         <ul class="dropdown-menu color-drop text-black">
-                            <li><a class="dropdown-item" href="">Activos</a></li>
+                            <li><a class="dropdown-item text-dark" href="">Activos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -44,7 +48,7 @@
                             Clientes
                         </a>                        
                         <ul class="dropdown-menu color-drop text-black">
-                            <li><a class="dropdown-item" href="">Activos</a></li>
+                            <li><a class="dropdown-item text-dark" href="">Activos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -57,7 +61,7 @@
                             Prestamos
                         </a>                        
                         <ul class="dropdown-menu color-drop text-black">
-                            <li><a class="dropdown-item" href="">Activos</a></li>
+                            <li><a class="dropdown-item text-dark" href="">Activos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -77,7 +81,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text fw-medium ">
-                    <small>Usuario: <strong class="text-light">{{ Auth::user()->name }}</strong></small>
+                    <small class="text-light">Usuario: <strong>{{ Auth::user()->name }}</strong></small>
                 </span>
             </div>
         </div>

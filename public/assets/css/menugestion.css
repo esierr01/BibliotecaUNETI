@@ -7,14 +7,21 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
-.navbar-brand {
+
+.logo {
     color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-right: 1em;
 }
+
 .navbar-custom1 {
     margin: 10px auto 0;
     width: 95%;
@@ -23,6 +30,7 @@ body {
     border-radius: 15px;
     z-index: 99;
 }
+
 .navbar-custom2 {
     margin: 10px auto 0;
     width: 100%;
@@ -31,44 +39,72 @@ body {
     border-radius: 15px;
     z-index: 99;
 }
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-nav a:hover {
+    color: black;
+    font-size: 1.1em;
+}
+
 .color-drop {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(1px);
 }
+
 .custom-fondo {
-    background: #fe8c00;
-    background: -webkit-linear-gradient(to left, #f83600, #fe8c00);
-    background: linear-gradient(to left, #f83600, #fe8c00);
+    background: #F7971E;
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+    background: linear-gradient(to right, #FFD200, #F7971E);
 }
+
 .custom-fondo-admin {
     background: #FFE000;
     background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
     background: linear-gradient(to right, #799F0C, #FFE000);
 }
+
+span strong{
+    letter-spacing: 0.1em;
+}
+
+img .img-fluid{
+    color: black;
+    background-color: red;
+}
+
 #lenguajes i {
-    font-size: 1.6em;
+    font-size: 1.8em;
     padding: 0 5px 0 5px;
 }
+
 th,
 td {
     vertical-align: middle;
     font-size: 0.8em;
 }
+
 #libro_view {
     transition: transform 0.3s ease;
 }
+
 #libro_view:hover {
     transform: scale(2.2);
 }
+
 .card-header h3 {
     text-align: center;
     font-weight: bold;
     color: white;
     letter-spacing: 2px;
 }
+
 table tbody tr td strong {
     color: #05ffa1;
 }
+
 table tbody tr td .uno {
     color: black;
     font-weight: bold;
@@ -78,16 +114,19 @@ table tbody tr td .uno {
     border-radius: 15px;
     margin: 2px;
 }
+
 table tbody tr td .dos {
     color: #3e74e7;
     font-weight: bold;
     text-align: center;
 }
+
 table tbody tr td .pendiente {
     color: rgb(190, 55, 55);
     padding: 1px;
     margin: 1px;
 }
+
 .observacion {
     color: black;
     font-weight: bold;
@@ -96,13 +135,11 @@ table tbody tr td .pendiente {
     text-align: center;
     margin-bottom: 2px;
 }
+
 .control_pagina {
     margin-top: 3px;
 }
-.programador {
-    color: white;
-    font-weight: bolder;
-}
+
 #ImagenLibro {
     margin: auto;
     width: 200px;

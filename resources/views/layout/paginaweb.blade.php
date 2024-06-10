@@ -15,7 +15,10 @@
     <nav class="navbar navbar-expand-lg navbar-custom2">
         <div class="container-fluid">
             <div class="d-flex justify-content-between w-100">
-                <a class="navbar-brand">BibliotecaUneti</a>
+                <span class="logo">
+                    <img class="img-fluid" width="120em" src="/assets/img/uneti.png" alt="uneti">
+                    BibliotecaUneti
+                </span>
 
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

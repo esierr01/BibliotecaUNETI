@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AutenticaController;
 use App\Http\Controllers\PaginaWebController;
+use App\Http\Controllers\LibroController;
 use Illuminate\Support\Facades\Route;
 
 //! Rutas iniciales no autenticadas
@@ -17,6 +18,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('menugestion', function(){
         return view('modulos.menugestion.index');
     })->name('menugestion.index');
+
+    Route::resource('libros', LibroController::class);
+    Route::get('/libros/index_eliminados', [LibroController::class, 'index_eliminados'])->name('libros.index_eliminados');
+    Route::delete('/libros/restaurar', [LibroController::class, 'restaurar'])->name('libros.restaurar');
+
+
+
 });
 
 

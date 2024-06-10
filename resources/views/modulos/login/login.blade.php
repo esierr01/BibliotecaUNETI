@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <div class="container d-flex">
+    <div class="container d-flex contenedor-login">
         <form action="" method="post" class="m-auto bg-white p-5 rounded-sm shadow-lg w-form">
             @csrf
 
