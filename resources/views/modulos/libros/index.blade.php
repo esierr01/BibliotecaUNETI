@@ -7,6 +7,7 @@
         <div class="card-header">
             <strong>LIBROS ACTIVOS</strong>
         </div>
+
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-dark table-bordered">
@@ -41,9 +42,9 @@
                                 <td>{{ $libro->disponibles }}</td>
                                 <td width="150px">{{ $libro->created_at }}</td>
                                 <td>
-                                    <a href="" type="button" class="btn btn-sm btn-blue px-2"><i class="fa-solid fa-pencil"></i></a>
+                                    <a title="Editar" href="" type="button" class="btn btn-sm btn-blue px-2"><i class="fa-solid fa-pencil"></i></a>
                                     <small class="mx-1"></small>
-                                    <button class="btn btn-sm btn-red px-2"><i class="fa-solid fa-trash-can"></i></button>
+                                    <button title="Borrar" class="btn btn-sm btn-red px-2"><i class="fa-solid fa-trash-can"></i></button>
                                 </td>
                             </tr>
                         @endforeach
@@ -51,12 +52,20 @@
                 </table>
             </div>
         </div>
-        <div class="card-footer text-body-secondary align-content-between">
-            <div class="row">
-                <div class="col-4 text-left"><small>Página # de # (## Libros)</small></div>
-                <div class="col-4"><a href="" type="button" class="btn btn-sm btn-orange"><i class="fa-solid fa-square-plus"></i> Nuevo Libro</a></div>
-                <div class="col-4 text-right"><small>Links</small></div>
+
+        <div class="card-footer">
+            <div class="d-flex justify-content-between mt-3">
+                <div>
+                    <small>(Existencia: {{ $libros->total() }} Libros)</small>
+                </div>
+                <div>
+                    <a href="{{ route('libros.create') }}" type="button" class="btn btn-sm btn-orange px-4"><i class="fa-solid fa-square-plus"></i> Nuevo Libro</a>
+                </div>
+                <div>
+                    <small>{{ $libros->links() }}</small>
+                </div>
             </div>
         </div>
+        
     </div>
 @endsection

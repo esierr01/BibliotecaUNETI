@@ -20,7 +20,7 @@ class LibroController extends Controller
 
     public function create()
     {
-        //
+        return view('modulos.libros.create');
     }
 
     public function store(Request $request)

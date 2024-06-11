@@ -52,11 +52,17 @@ body {
     background: linear-gradient(to right, #FFD200, #F7971E);
 }
 
-span strong{
+.custom-fondo2 {
+    background: #ffe259;
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+    background: linear-gradient(to right, #ffa751, #ffe259);
+}
+
+span strong {
     letter-spacing: 0.1em;
 }
 
-img .img-fluid{
+img .img-fluid {
     color: black;
     background-color: red;
 }
@@ -66,26 +72,30 @@ img .img-fluid{
     padding: 0 5px 0 5px;
 }
 
-.dropdown-menu > li > a:hover {
-    background-image: none; 
-    background-color: gray; 
+.dropdown-menu>li>a:hover {
+    background-image: none;
+    background-color: gray;
     font-weight: bold;
 }
-table th{
+
+table th {
     font-size: 0.8em;
     font-weight: bold;
 }
-table td{
+
+table td {
     font-size: 0.8em;
     font-weight: normal;
     vertical-align: middle;
 }
+
 .btn-blue {
     border-style: solid;
     border-width: 1px;
     border-color: #22577a;
     color: #22577a;
 }
+
 .btn-blue:hover {
     border-style: solid;
     border-width: 1px;
@@ -93,12 +103,14 @@ table td{
     background-color: #22577a;
     color: white;
 }
+
 .btn-orange {
     border-style: solid;
     border-width: 1px;
     border-color: #e85d04;
     color: #e85d04;
 }
+
 .btn-orange:hover {
     border-style: solid;
     border-width: 1px;
@@ -106,12 +118,14 @@ table td{
     background-color: #e85d04;
     color: white;
 }
+
 .btn-red {
     border-style: solid;
     border-width: 1px;
     border-color: #d30606;
     color: #d30606;
 }
+
 .btn-red:hover {
     border-style: solid;
     border-width: 1px;
@@ -119,8 +133,29 @@ table td{
     background-color: #d30606;
     color: white;
 }
-.card-footer small{
+
+.card-footer small {
     color: black;
     font-size: 0.7em;
     font-weight: bold;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: black;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #22577a;
+}
+
+#ImagenLibro{
+    margin: auto;
+    width: 140px;
+    align-items: center;
 }

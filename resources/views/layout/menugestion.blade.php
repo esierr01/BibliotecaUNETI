@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    @php
+        $ruta_actual = request()->route()->getName();
+    @endphp
+
     <nav class="navbar navbar-expand-lg navbar-custom1">
         <div class="container-fluid">
             <span class="logo">
@@ -27,10 +31,11 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{{ route('menugestion.index') }}">Inicio</a> 
+                        <a class="nav-link @if ($ruta_actual=='menugestion.index') text-warning fw-bold @endif" href="{{ route('menugestion.index') }}">Inicio</a> 
                     </li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle @if ($ruta_actual=='libros.index'||$ruta_actual=='libros.create') text-warning fw-bold @endif" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Libros
                         </a>                        
@@ -87,7 +92,12 @@
         </div>
     </nav>
 
+    
     @yield('content')
+    
+    <pre class="text-light mt-4">
+        Ruta temporal: {{ $ruta_actual }}
+    </pre>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
