@@ -191,7 +191,7 @@ CREATE TABLE `libros` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -199,6 +199,7 @@ CREATE TABLE `libros` (
 --
 
 /*!40000 ALTER TABLE `libros` DISABLE KEYS */;
+INSERT INTO `libros` VALUES (1,'img/00.png','Prueba1',2010,'Nombre 1 Perez',1,2,2,0,NULL,'2024-06-08 09:46:20',NULL),(2,'img/00.png','Prueba2 Aprendiendo C++',2005,'Nombre 2 Gutierrez',2,3,3,0,NULL,'2024-06-08 09:46:20',NULL),(3,'img/00.png','Prueba3 Programando AutoLisp',1998,'Un viejito',1,1,1,0,NULL,'2024-06-08 09:46:20',NULL),(4,'img/00.png','Aprendiendo Python para principiantes (una mirada rápida en el mundo de la programación)',2016,'Nicolas Swhangers',1,2,2,0,NULL,'2024-06-08 09:46:20',NULL);
 /*!40000 ALTER TABLE `libros` ENABLE KEYS */;
 
 --
@@ -301,7 +302,7 @@ CREATE TABLE `sessions` (
 --
 
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('zTFREoycSBuCmRQmmSCdqGYj6v1needOCI7NOyhZ',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36','YTozOntzOjY6Il90b2tlbiI7czo0MDoieWFUOTNVTlhOdXpjODlqakFGbWtkdXNFbHVpZVBnVldic3R0RjVNSCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1717986906);
+INSERT INTO `sessions` VALUES ('krJOz4V2sYVOgIDE8v2WybsdapXl863IXwAVdQEp',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36','YTozOntzOjY6Il90b2tlbiI7czo0MDoiQjg0WkVUMWRCNWthR0xsVUt3VzUyM1huTDNNSGo4NU83N3dUYU5PbCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1718102670);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `users` (
 --
 
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com','2024-06-08 09:46:20','$2y$12$dmTdgT2H/QsVFDa9ywy8GOUnffNPVnT5UTNT1mp6p6pOC1cSuYIPG','iRXsddSz3m5k5ThsJyXkDOKpTruBScDFdcxgUcKWToPScf1a8QQT2sqF21hL','2024-06-08 09:46:21','2024-06-08 09:46:21');
+INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com','2024-06-08 09:46:20','$2y$12$dmTdgT2H/QsVFDa9ywy8GOUnffNPVnT5UTNT1mp6p6pOC1cSuYIPG','pXz7UpX45DTbYk5kStSeQqH1YhdRExMVsi2racjZduRVKWcyMleOoilEq9QS','2024-06-08 09:46:21','2024-06-08 09:46:21');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 --
@@ -346,4 +347,4 @@ INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com','2024-06-08 09:46:20','$
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-09 22:36:31
+-- Dump completed on 2024-06-11  6:45:18

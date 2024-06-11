@@ -89,3 +89,16 @@ footer {
     background-color: #e85d04;
     color: white;
 }
+.btn-red {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d30606;
+    color: #d30606;
+}
+.btn-red:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d30606;
+    background-color: #d30606;
+    color: white;
+}

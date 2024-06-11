@@ -1,6 +1,6 @@
 @extends('layout.menugestion') 
 
-@section('title', 'BibliotecaUNETI - Gestión')
+@section('title', 'BibliotecaUNETI - Gestión') 
 
 @section('content')
     <div class="row">

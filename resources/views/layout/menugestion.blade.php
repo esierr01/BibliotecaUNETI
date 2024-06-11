@@ -21,13 +21,13 @@
 
             <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i> 
             </button>
 
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="">Inicio</a>
+                        <a class="nav-link" href="{{ route('menugestion.index') }}">Inicio</a> 
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -35,7 +35,7 @@
                             Libros
                         </a>                        
                         <ul class="dropdown-menu color-drop text-black">
-                            <li><a class="dropdown-item text-dark" href="">Activos</a></li>
+                            <li><a class="dropdown-item text-dark" href="{{ route('libros.index') }}">Activos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>

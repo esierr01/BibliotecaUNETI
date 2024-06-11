@@ -9,7 +9,8 @@ class LibroController extends Controller
 {
     public function index()
     {
-        //
+        $libros = Libro::where('eliminado', 0)->orderby('titulo')->paginate(2);
+        return view('modulos.libros.index', compact('libros'));
     }
 
     public function index_eliminados()
