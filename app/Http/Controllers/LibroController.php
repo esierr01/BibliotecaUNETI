@@ -9,9 +9,8 @@ class LibroController extends Controller
 {
     public function index()
     {
-        $cantLibros = Libro::where('eliminado',0)->count();
-        $libros = Libro::where('eliminado', 0)->orderby('titulo')->simplePaginate(2);
-        return view('modulos.libros.index', compact('libros', 'cantLibros'));
+        $libros = Libro::where('eliminado', 0)->orderby('titulo')->Paginate(2);
+        return view('modulos.libros.index', compact('libros'));
     }
 
     public function index_eliminados()
@@ -46,6 +45,7 @@ class LibroController extends Controller
         ]);
 
         $libro = Libro::create($request->all());
+        $ultimoId = Libro::latest('id')->first()->id;
 
         if ($request->hasFile('caratula')) {
             $originalFileName = $request->file('caratula')->getClientOriginalExtension();
@@ -55,7 +55,7 @@ class LibroController extends Controller
             $libro->caratula = 'img/' . $newFileName;
             $libro->save();
         }
-
+        
         return redirect()->route('libros.index')->with('success', 'Libro cargado exitosamente');
     }
 

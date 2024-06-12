@@ -14,19 +14,24 @@
         </div>
     @endif --}}
 
-    <div class="card text-center p-2 mt-4 mx-3 custom-fondo">
+    <div class="card text-center px-2 py-0 mt-3 mx-3 custom-fondo1">
         <div class="card-header align-content-between row">
-            <div class="col-4">
-                @if ($msj = Session::get('success'))
-                    <div role="alert" id="alerta1" class="mensaje-suceso">
-                        <strong><i class="fa-solid fa-check"></i></strong> {{ $msj }}
-                    </div>
-                @endif
+            <div class="col-12 titulo-modulo mt-0">
+                <strong>LIBROS ACTIVOS</strong>
             </div>
-            <div class="col-4"><strong>LIBROS ACTIVOS</strong></div>
-            <div class="col-4">
+            <hr>
+            <div class="col-5">
+                <div class="input-group flex-nowrap">
+                    <button class="btn btn-blue" id="addon-wrapping">Buscar</button>
+                    <input type="text" class="form-control"
+                        placeholder="cadena a buscar" value=""
+                        name="busqueda" aria-label="busqueda" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
                 @if ($msj = Session::get('success'))
-                    <div role="alert" id="alerta2" class="mensaje-suceso">
+                    <div role="alert" id="alerta2" class="mensaje-suceso mt-1">
                         <strong><i class="fa-solid fa-check"></i></strong> {{ $msj }}
                     </div>
                 @endif
@@ -81,16 +86,10 @@
         </div>
 
         <div class="card-footer">
-            <div class="d-flex justify-content-between mt-3">
-                <div>
-                    <small>
-                        (Existencia: {{ $cantLibros }}) -
-                        <strong>Página: {{ $libros->currentPage() }}</strong>
-                    </small>
-                </div>
+            <div class="d-flex justify-content-between mt-1">
                 <div>
                     <a href="{{ route('libros.create') }}" type="button" class="btn btn-sm btn-orange px-4"><i
-                            class="fa-solid fa-square-plus"></i> Nuevo Libro</a>
+                            class="fa-solid fa-square-plus"></i>  Insertar Nuevo Libro</a>
                 </div>
                 <div>
                     <small>{{ $libros->onEachSide(0)->links() }}</small>

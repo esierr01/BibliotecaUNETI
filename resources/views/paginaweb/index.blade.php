@@ -19,14 +19,14 @@
                 <h2 class="text-center mt-3">¡¡ No hay libros disponibles en la Biblioteca !!</h2>
             @else
                 @foreach ($libros as $libro)
-                    <div class="card col-md-3">
+                    <div class="card col-md-3 libro">
                         <div class="card-body text-center">
                             <img class="imagen-pagina" src="{{ asset('storage') . '/' . $libro->caratula }}"
                                     alt="Title" />
                        
                             <h5 class="tit-libro">{{ $libro->titulo }}</h5>
                             <h5 class="aut-libro">Autor: {{ $libro->autor }}</h5>
-                            <h5 class="edi-libro">Publicación: {{ $libro->ano_publica }}</h5>
+                            <h5 class="edi-libro">Fecha publicación: {{ $libro->ano_publica }}</h5>
                         </div>
                     </div>
                 @endforeach

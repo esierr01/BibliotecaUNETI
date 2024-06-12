@@ -16,7 +16,7 @@
     <div class="container-fluid contenedor-acerca">
         <div class="row d-flex">
 
-            <p class="texto-acerca col-10 offset-1">
+            <p class="texto-acerca col-10 offset-1"> 
                 Bienvenido al Sitio BibliotecaUneti, un proyecto desarrollado por Emmanuel Sierra, estudiante de
                 Ingeniería en Informática en su cuarto semestre, de la Universidad Nacional Experimental de Las
                 Telecomunicaciones e Informática. El sitio WEB es el resultado de un trabajo final para el módulo 2 de

@@ -5,7 +5,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-10 offset-1 text-center mt-5">
-            <div class="jumbotron jumbotron-fluid bg-body-secondary p-2 rounded custom-fondo">
+            <div class="jumbotron jumbotron-fluid bg-body-secondary p-2 rounded custom-fondo1">
                 <div class="container">
                     <h1 class="display-6 mb-4 text-center">Bienvenido al Sistema BibliotecaUneti</h1>
                     <p class="lead fs-5 text-center">

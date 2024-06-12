@@ -14,7 +14,7 @@
     </div>
 
     <div class="container d-flex contenedor-login">
-        <form action="" method="post" class="m-auto bg-white p-5 rounded-sm shadow-lg w-form">
+        <form action="" method="post" class="m-auto bg-white p-5 rounded-sm w-form">
             @csrf
 
             <h5 class="text-center">Ingrese sus datos de acceso</h5>

@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mt-3">
-                    <div class="card custom-fondo">
+                    <div class="card custom-fondo1">
                         <div class="card-header text-center">
                             <h4>LIBROS @yield('modulo')</h4>
                         </div>
@@ -29,11 +29,11 @@
                                                     placeholder="Ingrese título del Libro" value="{{ old('titulo') }}"
                                                     name="titulo" aria-label="titulo" aria-describedby="addon-wrapping">
                                             </div>
-                                            @error('titulo')
+                                            {{-- @error('titulo')
                                                 <small class="text-danger mt-0 mb-0">
                                                     <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                 </small>
-                                            @enderror
+                                            @enderror --}}
 
                                             <div class="input-group flex-nowrap mt-4">
                                                 <span class="input-group-text" id="addon-wrapping">Autor</span>
@@ -41,11 +41,11 @@
                                                     placeholder="Ingrese autor del Libro" value="{{ old('autor') }}"
                                                     name="autor" aria-label="autor" aria-describedby="addon-wrapping">
                                             </div>
-                                            @error('autor')
+                                            {{-- @error('autor')
                                                 <small class="text-danger mt-0 mb-0">
                                                     <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                 </small>
-                                            @enderror
+                                            @enderror --}}
 
                                             <div class="d-flex">
                                                 <div class="input-group flex-nowrap mt-4">
@@ -56,11 +56,11 @@
                                                         aria-label="ano_publica" aria-describedby="addon-wrapping"
                                                         min="1900" max="2099">
                                                 </div>
-                                                @error('ano_publica')
+                                                {{-- @error('ano_publica')
                                                     <small class="text-danger mt-0 mb-0">
                                                         <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                     </small>
-                                                @enderror
+                                                @enderror --}}
                                                 <div class="mt-4 mx-2"> </div>
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Edición</span>
@@ -69,11 +69,11 @@
                                                         name="edicion" aria-label="edicion"
                                                         aria-describedby="addon-wrapping" min="1" max="10">
                                                 </div>
-                                                @error('edicion')
+                                                {{-- @error('edicion')
                                                     <small class="text-danger mt-0 mb-0">
                                                         <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                     </small>
-                                                @enderror
+                                                @enderror --}}
                                             </div>
 
                                             <div class="d-flex mb-3">
@@ -84,11 +84,11 @@
                                                         name="ejemplares" aria-label="ejemplares"
                                                         aria-describedby="addon-wrapping" min="1" max="30">
                                                 </div>
-                                                @error('ejemplares')
+                                                {{-- @error('ejemplares')
                                                     <small class="text-danger mt-0 mb-0">
                                                         <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                     </small>
-                                                @enderror
+                                                @enderror --}}
                                                 <div class="mt-4 mx-2"> </div>
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Disponibles</span>
@@ -98,11 +98,11 @@
                                                         aria-label="disponibles" aria-describedby="addon-wrapping"
                                                         min="1" max="30">
                                                 </div>
-                                                @error('disponibles')
+                                                {{-- @error('disponibles')
                                                     <small class="text-danger mt-0 mb-0">
                                                         <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                     </small>
-                                                @enderror
+                                                @enderror --}}
                                             </div>
                                         </div>
                                     </div>
@@ -128,11 +128,11 @@
                                                     type="file" accept=".jpg,.jpeg,.png, image/*"
                                                     onchange="mostrarImagen(event)" name="caratula"
                                                     value="{{ old('caratula') }}">
-                                                @error('caratula')
+                                                {{-- @error('caratula')
                                                     <small class="text-danger mt-0 mb-0">
                                                         <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                     </small>
-                                                @enderror
+                                                @enderror --}}
                                             </div>
                                         </div>
                                     </div>
