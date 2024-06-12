@@ -3,6 +3,7 @@
 html,
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -158,4 +159,11 @@ table td {
     margin: auto;
     width: 140px;
     align-items: center;
+}
+
+.mensaje-suceso{
+    color: white;
+    background-color: #22577a;
+    border-radius: 15px;
+    padding: 1px;
 }

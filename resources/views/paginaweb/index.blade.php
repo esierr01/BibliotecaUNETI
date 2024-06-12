@@ -14,21 +14,19 @@
     </div>
 
     <div class="container-fluid contenedor-libros">
-        <div class="row d-flex justify-content-center">
+        <div class="row justify-content-center">
             @if ($libros->isEmpty())
                 <h2 class="text-center mt-3">¡¡ No hay libros disponibles en la Biblioteca !!</h2>
             @else
                 @foreach ($libros as $libro)
-                    <div class="card col-md-3 mx-3 mb-3 mt-3 custom-libros">
-                        <img class="imagen-pagina" src="{{ asset('storage') . '/' . $libro->caratula }}" alt="Title" />
-                        <div class="card-body">
-                            <h4 class="card-title text-center">{{ $libro->titulo }}</h4>
-                        </div>
-                        <div class="card-footer">
-                            <p class="card-text text-center mt-3">
-                                Autor: {{ $libro->autor }} <br>
-                                Publicación: {{ $libro->ano_publica }}
-                            </p>
+                    <div class="card col-md-3">
+                        <div class="card-body text-center">
+                            <img class="imagen-pagina" src="{{ asset('storage') . '/' . $libro->caratula }}"
+                                    alt="Title" />
+                       
+                            <h5 class="tit-libro">{{ $libro->titulo }}</h5>
+                            <h5 class="aut-libro">Autor: {{ $libro->autor }}</h5>
+                            <h5 class="edi-libro">Publicación: {{ $libro->ano_publica }}</h5>
                         </div>
                     </div>
                 @endforeach

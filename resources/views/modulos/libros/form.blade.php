@@ -26,53 +26,84 @@
                                             <div class="input-group flex-nowrap mt-4">
                                                 <span class="input-group-text" id="addon-wrapping">Titulo</span>
                                                 <input type="text" class="form-control"
-                                                    placeholder="Ingrese título del Libro" value="" name="titulo"
-                                                    aria-label="Titulo" aria-describedby="addon-wrapping">
+                                                    placeholder="Ingrese título del Libro" value="{{ old('titulo') }}"
+                                                    name="titulo" aria-label="titulo" aria-describedby="addon-wrapping">
                                             </div>
                                             @error('titulo')
-                                                <small class="text-danger mt-1">
-                                                    <strong>{{ $message }}</strong>
+                                                <small class="text-danger mt-0 mb-0">
+                                                    <small class="text-muted"><strong>{{ $message }}</strong></small>
                                                 </small>
                                             @enderror
 
                                             <div class="input-group flex-nowrap mt-4">
                                                 <span class="input-group-text" id="addon-wrapping">Autor</span>
                                                 <input type="text" class="form-control"
-                                                    placeholder="Ingrese autor del Libro" value="" name="autor"
-                                                    aria-label="Autor" aria-describedby="addon-wrapping">
+                                                    placeholder="Ingrese autor del Libro" value="{{ old('autor') }}"
+                                                    name="autor" aria-label="autor" aria-describedby="addon-wrapping">
                                             </div>
+                                            @error('autor')
+                                                <small class="text-danger mt-0 mb-0">
+                                                    <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                </small>
+                                            @enderror
 
                                             <div class="d-flex">
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Publicación</span>
                                                     <input type="number" class="form-control"
-                                                        placeholder="Ingrese año publicación" value="" name="ano_publica"
-                                                        aria-label="Autor" aria-describedby="addon-wrapping" min="1900" max="2099">
+                                                        placeholder="Ingrese año publicación"
+                                                        value="{{ old('ano_publica') }}" name="ano_publica"
+                                                        aria-label="ano_publica" aria-describedby="addon-wrapping"
+                                                        min="1900" max="2099">
                                                 </div>
-                                                <div class="mt-4 mx-2">  </div>
+                                                @error('ano_publica')
+                                                    <small class="text-danger mt-0 mb-0">
+                                                        <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                    </small>
+                                                @enderror
+                                                <div class="mt-4 mx-2"> </div>
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Edición</span>
                                                     <input type="number" class="form-control"
-                                                        placeholder="Ingrese edición del Libro" value="" name="edicion"
-                                                        aria-label="Edicion" aria-describedby="addon-wrapping" min="1" max="10">
+                                                        placeholder="Ingrese edición del Libro" value="{{ old('edicion') }}"
+                                                        name="edicion" aria-label="edicion"
+                                                        aria-describedby="addon-wrapping" min="1" max="10">
                                                 </div>
-                                            </div>     
-                                            
+                                                @error('edicion')
+                                                    <small class="text-danger mt-0 mb-0">
+                                                        <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                    </small>
+                                                @enderror
+                                            </div>
+
                                             <div class="d-flex mb-3">
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Ejemplares</span>
                                                     <input type="number" class="form-control"
-                                                        placeholder="Ingrese nro ejemplares" value="" name="ejemplares"
-                                                        aria-label="Autor" aria-describedby="addon-wrapping" min="1" max="30">
+                                                        placeholder="Ingrese nro ejemplares" value="{{ old('ejemplares') }}"
+                                                        name="ejemplares" aria-label="ejemplares"
+                                                        aria-describedby="addon-wrapping" min="1" max="30">
                                                 </div>
-                                                <div class="mt-4 mx-2">  </div>
+                                                @error('ejemplares')
+                                                    <small class="text-danger mt-0 mb-0">
+                                                        <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                    </small>
+                                                @enderror
+                                                <div class="mt-4 mx-2"> </div>
                                                 <div class="input-group flex-nowrap mt-4">
                                                     <span class="input-group-text" id="addon-wrapping">Disponibles</span>
                                                     <input type="number" class="form-control"
-                                                        placeholder="Ingrese ejemplares disponibles" value="" name="disponibles"
-                                                        aria-label="Edicion" aria-describedby="addon-wrapping" min="1" max="30">
+                                                        placeholder="Ingrese ejemplares disponibles"
+                                                        value="{{ old('disponibles') }}" name="disponibles"
+                                                        aria-label="disponibles" aria-describedby="addon-wrapping"
+                                                        min="1" max="30">
                                                 </div>
-                                            </div>  
+                                                @error('disponibles')
+                                                    <small class="text-danger mt-0 mb-0">
+                                                        <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                    </small>
+                                                @enderror
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -84,18 +115,29 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
-                                                <img id="ImagenLibro" class="img-fluid" src="/assets/img/libro_vacio.png" alt="libro">
+                                                <img id="ImagenLibro" class="img-fluid" src="/assets/img/libro_vacio.png"
+                                                    alt="libro">
                                             </div>
 
                                             <div class="mb-0">
                                                 <label for="formFileSm" class="form-label mb-0">
                                                     <small>Nombre archivo:</small>
+                                                    <small>{{ old('caratula') }}</small>
                                                 </label>
-                                                <input class="form-control form-control-sm" id="formFileSm" type="file" accept=".jpg,.jpeg,.png, image/*">
-                                              </div>
+                                                <input class="form-control form-control-sm" id="formFileSm"
+                                                    type="file" accept=".jpg,.jpeg,.png, image/*"
+                                                    onchange="mostrarImagen(event)" name="caratula"
+                                                    value="{{ old('caratula') }}">
+                                                @error('caratula')
+                                                    <small class="text-danger mt-0 mb-0">
+                                                        <small class="text-muted"><strong>{{ $message }}</strong></small>
+                                                    </small>
+                                                @enderror
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" value="0" name="eliminado">
                             </div>
                         </div>
                         <div class="card-footer">
