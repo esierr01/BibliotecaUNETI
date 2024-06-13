@@ -14,6 +14,16 @@
     </div>
 
     <div class="container-fluid contenedor-libros">
+        <div class="card col-9 d-flex m-auto mb-5 libro">
+            <div class="card-body">
+                <div class="input-group mt-1">
+                    <input type="text" class="form-control" placeholder="Ingrese busqueda" value="{{ old('buscar') }}"
+                        name="buscar" aria-label="Usuario" aria-describedby="addon-wrapping">
+                    <button class="btn btn-blue"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+
         <div class="row justify-content-center">
             @if ($libros->isEmpty())
                 <h2 class="text-center mt-3">¡¡ No hay libros disponibles en la Biblioteca !!</h2>
@@ -22,8 +32,8 @@
                     <div class="card col-md-3 libro">
                         <div class="card-body text-center">
                             <img class="imagen-pagina" src="{{ asset('storage') . '/' . $libro->caratula }}"
-                                    alt="Title" />
-                       
+                                alt="Title" />
+
                             <h5 class="tit-libro">{{ $libro->titulo }}</h5>
                             <h5 class="aut-libro">Autor: {{ $libro->autor }}</h5>
                             <h5 class="edi-libro">Fecha publicación: {{ $libro->ano_publica }}</h5>
