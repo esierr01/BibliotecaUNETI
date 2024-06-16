@@ -13,10 +13,20 @@ class PaginaWebController extends Controller
         return view('paginaweb.index', compact('libros'));
     }
 
+    public function filtro(Request $request)
+    {
+        // dd($request->all());
+        $cadena = $request['buscar'];
+        $libros = Libro::whereRaw("UPPER(titulo) LIKE UPPER('%$cadena%')")
+            ->orWhereRaw("UPPER(autor) LIKE UPPER('%$cadena%')")
+            ->where('eliminado', 0)
+            ->get();
+        return view('paginaweb.index', compact('libros'));
+    }
+
     public function acerca()
     {
         return view('paginaweb.acerca');
-        
     }
 
     public function contacto()

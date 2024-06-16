@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PaginaWebController::class, 'index'])->name('paginaweb.index');
 Route::get('/acerca', [PaginaWebController::class, 'acerca'])->name('paginaweb.acerca');
 Route::get('/contacto', [PaginaWebController::class, 'contacto'])->name('paginaweb.contacto');
+Route::post('/filtro', [PaginaWebController::class, 'filtro'])->name('paginaweb.filtro');
+
 Route::get('/login', [AutenticaController::class, 'login'])->name('login');
 Route::post('/login', [AutenticaController::class, 'valida_login']);
 Route::post('signout', [AutenticaController::class, 'signout'])->name('signout');

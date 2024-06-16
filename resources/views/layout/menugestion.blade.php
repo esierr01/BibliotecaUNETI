@@ -14,7 +14,7 @@
 
 <body>
     @php
-        $ruta_actual = request()->route()->getName();
+        $ruta_actual = request()->route()->getName(); 
     @endphp
 
     <nav class="navbar navbar-expand-lg navbar-custom1">

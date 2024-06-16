@@ -24,9 +24,11 @@
                             <img class="imagen-pagina" src="{{ asset('storage') . '/' . $libro->caratula }}"
                                     alt="Title" />
                        
-                            <h5 class="tit-libro">{{ $libro->titulo }}</h5>
-                            <h5 class="aut-libro">Autor: {{ $libro->autor }}</h5>
-                            <h5 class="edi-libro">Fecha publicación: {{ $libro->ano_publica }}</h5>
+                            <div class="textos_libros">
+                                <strong>{{ $libro->titulo }}</strong>
+                                <h5>{{ $libro->autor }}</h5>
+                                <h5><strong>{{ $libro->ano_publica }}</strong></h5>
+                            </div>
                         </div>
                     </div>
                 @endforeach

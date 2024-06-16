@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    @php
+        $ruta_actual = request()->route()->getName();
+    @endphp
+
     <nav class="navbar navbar-expand-lg navbar-custom2">
         <div class="container-fluid">
             <div class="d-flex justify-content-between w-100">
@@ -30,6 +34,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        @if ($ruta_actual != 'paginaweb.acerca' && $ruta_actual != 'paginaweb.contacto')
+                            <li class="nav-item">
+                                <div class="buscar">
+                                    <form action="{{ route('paginaweb.filtro') }}" method="post">
+                                        @csrf
+                                        <input type="text" placeholder="Buscar" name="buscar">
+                                        <button>
+                                            <i class="fa-solid fa-magnifying-glass icono"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </li>
+                        @endif
                         <li class="nav-item">
                             <a class="nav-link text-light mt-1 fw-bold" href="{{ route('paginaweb.index') }}">Libros</a>
                         </li>
@@ -51,6 +68,10 @@
     </nav>
 
     @yield('content')
+
+    {{-- <pre class="text-dark mt-4">
+        Ruta temporal: {{ $ruta_actual }}
+    </pre> --}}
 
     <footer>
         <hr>

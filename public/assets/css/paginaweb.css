@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap');
 /*! ARCHIVO DE ESTILOS DE PAGINA WEB */
 
 html,
@@ -7,6 +8,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('/assets/img/fondo.jpg');
     background-repeat: no-repeat;
@@ -15,12 +17,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .logo {
     color: white;
     font-size: 1.4em;
     font-weight: bold;
     letter-spacing: 0.05em;
 }
+
 .navbar-custom2 {
     margin: 0.4em auto 0;
     width: 100%;
@@ -28,9 +32,11 @@ body {
     backdrop-filter: blur(0px);
     z-index: 99;
 }
+
 .contenedor-titulo {
     margin-top: 1.5em;
 }
+
 .titulo-ppal-web {
     text-align: center;
     color: white;
@@ -38,19 +44,21 @@ body {
     font-weight: bold;
     margin-top: .3em;
 }
+
 .caja-titulo {
     margin: auto;
-    align-items: center;
     width: 10em;
     height: 1.5em;
     border-bottom: 0.5em solid white;
 }
+
 .contenedor-libros {
     margin-top: 5em;
     margin-bottom: 2em;
     display: flex;
     flex-wrap: wrap;
 }
+
 .contenedor-libros .libro {
     background: #F7F8F8;
     background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);
@@ -60,27 +68,28 @@ body {
     margin-right: 2em;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
-.tit-libro {
-    margin-top: 0.8em;
-    font-size: 0.9em;
-    background-color: #56549b;
-    color: white;
-    padding: 1em;
-    border-radius: 1em;
-    letter-spacing: 0.08em;
-}
-.aut-libro {
-    font-size: 0.9em;
-    background-color: #37208a;
-    color: white;
+
+.textos_libros {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+    margin-top: 1em;
+    background: linear-gradient(#386f54, #8ec165);
     padding: 0.8em;
     border-radius: 1em;
-    font-weight: bolder;
 }
-.edi-libro {
-    font-size: 0.8em;
-    font-weight: bolder;
+
+.textos_libros strong{
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
+.textos_libros h5{
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
 .contenedor-acerca {
     margin-top: 4em;
     margin-bottom: 2em;
@@ -90,6 +99,7 @@ body {
     color: rgba(29, 28, 28, 0.808);
     text-align: justify;
 }
+
 .contacto {
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.5px);
@@ -99,30 +109,72 @@ body {
     text-align: center;
     color: rgba(22, 21, 21, 0.808);
 }
+
 footer {
     margin-top: auto;
     margin-bottom: 1em;
     text-align: center;
     color: rgba(29, 28, 28, 0.808);
 }
+
 .imagen-pagina {
     width: 16em;
     height: 21em;
     align-items: center;
     margin: auto;
-    padding: 1em;
+    padding: 0.2em;
 }
+
 .contenedor-libros .row {
     width: 100%;
     margin: auto;
 }
+
 .contacto-mapa {
     margin-top: 5em;
     margin-bottom: 2.5em;
 }
-iframe{
+
+iframe {
     width: 30em;
     height: 22em;
     border: 0.2em double rgb(212, 200, 200);
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
+
+/* boton de busqueda */
+
+.buscar input{
+    /* width: 16em; */
+    width: 0em;
+    height: 1.8em;
+    margin-top: 0.55em;
+    margin-right: 0.4em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    padding: 1em;
+    transition: all 0.7s ease;
+}
+.buscar button{
+    position: absolute;
+    color: #fff;
+    background-color: black;
+    border-radius: 2em;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+    top: 1.3em;
+    right: 20em;
+}
+
+.buscar:hover input{
+    width: 16em;
+}
+
+.buscar input:focus{
+    width: 16em;
+}
+
+

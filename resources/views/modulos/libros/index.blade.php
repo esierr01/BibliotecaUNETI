@@ -16,20 +16,9 @@
 
     <div class="card text-center px-2 py-0 mt-3 mx-3 custom-fondo1">
         <div class="card-header align-content-between row">
-            <div class="col-12 titulo-modulo mt-0">
-                <strong>LIBROS ACTIVOS</strong>
-            </div>
-            <hr>
-            <div class="col-5">
-                <div class="input-group flex-nowrap">
-                    <button class="btn btn-blue" id="addon-wrapping">Buscar</button>
-                    <input type="text" class="form-control"
-                        placeholder="cadena a buscar" value=""
-                        name="busqueda" aria-label="busqueda" aria-describedby="addon-wrapping">
-                </div>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-5">
+            <div class="col-4"></div>
+            <div class="col-4"><strong class="titulo-modulo">LIBROS ACTIVOS</strong></div>
+            <div class="col-4">
                 @if ($msj = Session::get('success'))
                     <div role="alert" id="alerta2" class="mensaje-suceso mt-1">
                         <strong><i class="fa-solid fa-check"></i></strong> {{ $msj }}
