@@ -51,12 +51,10 @@
                             <a class="nav-link text-light mt-1 fw-bold" href="{{ route('paginaweb.index') }}">Libros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light mt-1 fw-bold"
-                                href="{{ route('paginaweb.acerca') }}">Acerca</a>
+                            <a class="nav-link text-light mt-1 fw-bold" href="{{ route('paginaweb.acerca') }}">Acerca</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light mt-1 fw-bold"
-                                href="{{ route('paginaweb.contacto') }}">Contacto</a>
+                            <a class="nav-link text-light mt-1 fw-bold" href="{{ route('paginaweb.contacto') }}">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light mt-1 fw-bold" href="{{ route('login') }}">Admin</a>
