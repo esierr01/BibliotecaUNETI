@@ -1,13 +1,8 @@
 //! Funcion para desaparecer automaticamente mensajes de error con id="alerta"
 window.onload = () => {
     setTimeout(() => {
-        if (document.getElementById('alerta1') != null) {
-            document.getElementById('alerta1').remove()
-        }
-    }, 4000);
-    setTimeout(() => {
-        if (document.getElementById('alerta2') != null) {
-            document.getElementById('alerta2').remove()
+        if (document.getElementById('alerta') != null) {
+            document.getElementById('alerta').remove()
         }
     }, 4000);
 }

@@ -9,7 +9,7 @@ class LibroController extends Controller
 {
     public function index()
     {
-        $libros = Libro::where('eliminado', 0)->orderby('titulo')->Paginate(2);
+        $libros = Libro::where('eliminado', 0)->orderby('titulo')->get();
         return view('modulos.libros.index', compact('libros'));
     }
 
@@ -36,12 +36,12 @@ class LibroController extends Controller
         ],[
             'caratula.required' => 'La carátula es requerida',
             'titulo.required' => 'El titulo es requerido',
-            'ano_publica.required' => 'requerido',
+            'ano_publica.required' => 'Fecha de publicación es requerida',
             'autor.required' => 'El autor es requerido',
-            'edicion.required' => 'requerido',
-            'ejemplares.required' => 'requerido',
-            'disponibles.required' => 'requerido',
-            'disponibles.lte' => 'no puede ser mayor que ejemplares'
+            'edicion.required' => 'La edición es requerida',
+            'ejemplares.required' => '# de ejemplares existentes es requerido',
+            'disponibles.required' => '# ejemplares disponibles requerido',
+            'disponibles.lte' => 'ejemplares disponibles no puede ser mayor que existentes'
         ]);
 
         $libro = Libro::create($request->all());
